@@ -1,7 +1,6 @@
 // To parse this JSON data, do
 //
 //     final album = albumFromJson(jsonString);
-
 import 'dart:convert';
 
 List<Album> albumFromJson(String str) =>

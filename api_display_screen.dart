@@ -40,3 +40,38 @@ class _ApiDisplayScreenState extends State<ApiDisplayScreen>{
     );
   }
 }
+// body: Column(
+//   children: [
+//     Center(
+//       child: FutureBuilder<Weather>(
+//         future: fetchWeather(),
+//         builder: (context, snapshot) {
+//           final weatherData=snapshot.data;
+//           if (snapshot.hasData) {
+//             return Column(
+//               children: [
+//                 Text(weatherData!.forecastDaily!.days![0].forecastStart.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].forecastEnd.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].conditionCode.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].precipitationChance.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].precipitationAmount.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].precipitationType.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].maxUvIndex.toString()),
+//                 Text(weatherData.forecastDaily!.days![0].snowfallAmount.toString()),
+//                 Text(weatherData.parameters!.latitude.toString()),
+//                 Text(weatherData.parameters!.longitude.toString()),
+//                 Text(weatherData.resource.toString()),
+//               ],
+//             );
+//           } else if (snapshot.hasError) {
+//             return Text('${snapshot.error}');
+//           }
+//
+//           // By default, show a loading spinner.
+//           return const CircularProgressIndicator();
+//         },
+//       ),
+//     ),
+//
+//   ],
+// ),
